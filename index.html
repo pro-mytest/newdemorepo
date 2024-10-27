@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GitHub</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      gdisplay: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      overflow: hidden;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .features {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0;.7);
+    }
+
+    .mouse-effect {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      pointer-events: none;
+      transition: background 0.3s, transform 0.3s;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to GitHub</h1>
+    <p>Your journey to collaboration and innovation starts here.</p>
+    </div>
+  
+  <div class="features">
+  <div class="feature">
+  <h2>C[ollaborate</h2>
+  <p>Work together with your team on projects seamlessly.</p>
+  </div>
+  <div class="feature">
+  <h2>Code Review</h2>
+  <p>Get feedback on your code and improve quality.</p>
+  </div>
+  <div class="feature">
+  <h2>Version Control</h2>
+  <p>Keep track of changes and manage your code history.</p>
+  </div>
+  </div>
+  
+  <footer>
+    &copy; 2024 GitHub, Inc. All rights reserved.
+  </footer>
+
+    <div class="mouse-effect"></div>
+
+    <script>
+      const mouseEffect = document.querySelector('.mouse-effect');
+
+      document.addEventListener('mousemove', (e) => {
+        mouseEffect.style.left = e.pageX + 'px';
+        mouseEffect.style.top = e.pageY + 'px';
+        mouseEffect.style.transform = 'translate(-50%, -50%)';
+      });
+
+      document.addEventListener('mouseover', () => {
+        mouseEffect.style.background = 'rgba(255, 255, 255, 0.8)';
+      });
+
+      document.addEventListener('mouseout', () => {
+        mouseEffect.style.background = 'rgba(255, 255, 255, 0.5)';
+      });
+    </script>
+  </body>
+</html>html>
+
+
+    </script>
+  </footer></p></p></h1>
+    </div>
+  </body>
+  </style></title>
+  </head>
